@@ -14,11 +14,15 @@ Tools to run AI coding agents (Claude Code) safely and reliably. Most are zero-d
 | Claude Code 環境を診断する | [neko-harness-doctor](https://github.com/aliksir/neko-harness-doctor) |
 | セッションの知識を次回に引き継ぐ | [context-distill](https://github.com/aliksir/context-distill) |
 | 会話ログを残す | [conversation-log](https://github.com/aliksir/conversation-log) |
+| 固まった Claude Code から会話を救出する | [neko-rescue](https://github.com/aliksir/neko-rescue) |
 | npm 供給網攻撃を検知する | [npm-postinstall-attack-scanner](https://github.com/aliksir/npm-postinstall-attack-scanner) |
 | Next.js / React の脆弱性を検査する | [nextjs-security-scanner](https://github.com/aliksir/nextjs-security-scanner) |
 
 ## その他のツール / More
 
 - スキル管理 / skill tooling: [skill-validator](https://github.com/aliksir/skill-validator) · [skill-memo](https://github.com/aliksir/skill-memo)
+- コミュニティスキルの監査 / community skill audit: [claude-code-skill-security-check](https://github.com/aliksir/claude-code-skill-security-check)
 - 教訓→スキル自動化 / lessons to skills: [lesson-skill-loop](https://github.com/aliksir/lesson-skill-loop)
+- 付箋メモ / sticky notes: [memo-yoshi](https://github.com/aliksir/memo-yoshi)
 - 秘密情報の取り回し / secrets: [secret-store](https://github.com/aliksir/secret-store)
+- CLI 非依存の品質ルール / CLI-agnostic quality rules: [other-neko-gundan](https://github.com/aliksir/other-neko-gundan)

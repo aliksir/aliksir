@@ -20,6 +20,19 @@ Tools to run AI coding agents (Claude Code) safely and reliably. Most are zero-d
 | npm 供給網攻撃を検知する | [npm-postinstall-attack-scanner](https://github.com/aliksir/npm-postinstall-attack-scanner) |
 | Next.js / React の脆弱性を検査する | [nextjs-security-scanner](https://github.com/aliksir/nextjs-security-scanner) |
 
+## 推奨構成プリセット / Recommended Presets
+
+用途に合わせて組み合わせるなら、まずこのプリセットから。
+Pick a preset that fits your use case.
+
+| Preset | Tools | Use case |
+|--------|-------|----------|
+| **Minimal** | [neko-gundan](https://github.com/aliksir/neko-gundan) + [neko-not-yoshi](https://github.com/aliksir/neko-not-yoshi) | AI エージェントの品質ルール + 漏洩検査 |
+| **Secure** | Minimal + [mcp-yoshi](https://github.com/aliksir/mcp-yoshi) + [pii-mask-yoshi](https://github.com/aliksir/pii-mask-yoshi) | MCP 通信監視 + PII マスク付き多層防御 |
+| **Enterprise** | Secure + [neko-harness-doctor](https://github.com/aliksir/neko-harness-doctor) + [context-distill](https://github.com/aliksir/context-distill) + [skill-validator](https://github.com/aliksir/skill-validator) | 環境診断 + セッション引継 + スキル監査 |
+| **Document AI** | [markitdown-yoshi](https://github.com/aliksir/markitdown-yoshi) + [pii-mask-yoshi](https://github.com/aliksir/pii-mask-yoshi) + [mcp-yoshi](https://github.com/aliksir/mcp-yoshi) | PDF/Office 変換 + PII 保護 |
+| **Recovery** | [yoshi](https://github.com/aliksir/yoshi) (rescue) + [conversation-log](https://github.com/aliksir/conversation-log) + [context-distill](https://github.com/aliksir/context-distill) | セッション救出 + ログ保存 + 知識引継 |
+
 ## PII 防御チェーン / PII Protection Chain
 
 顧客情報・機密データを扱う場合のツール連携。各層は独立して動き、組み合わせで多層防御になる。

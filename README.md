@@ -8,6 +8,7 @@ Tools to run AI coding agents (Claude Code) safely and reliably. Most are zero-d
 | やりたいこと | ツール |
 |------------|--------|
 | 顧客資料を安全に AI に読ませたい | [pii-mask-yoshi](https://github.com/aliksir/pii-mask-yoshi) |
+| PDF/Word/Excel を Markdown に変換したい | [markitdown-yoshi](https://github.com/aliksir/markitdown-yoshi) |
 | Claude Code をマルチエージェントで安全運用 | [neko-gundan](https://github.com/aliksir/neko-gundan) |
 | ブラウザ操作 MCP を安全に使う | [secure-browser-mcp](https://github.com/aliksir/secure-browser-mcp) |
 | MCP 通信を監視する | [mcp-yoshi](https://github.com/aliksir/mcp-yoshi) |

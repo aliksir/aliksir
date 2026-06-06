@@ -7,6 +7,7 @@ Tools to run AI coding agents (Claude Code) safely and reliably. Most are zero-d
 
 | やりたいこと | ツール |
 |------------|--------|
+| 顧客資料を安全に AI に読ませたい | [pii-mask-yoshi](https://github.com/aliksir/pii-mask-yoshi) |
 | Claude Code をマルチエージェントで安全運用 | [neko-gundan](https://github.com/aliksir/neko-gundan) |
 | ブラウザ操作 MCP を安全に使う | [secure-browser-mcp](https://github.com/aliksir/secure-browser-mcp) |
 | MCP 通信を監視する | [mcp-yoshi](https://github.com/aliksir/mcp-yoshi) |
@@ -17,6 +18,40 @@ Tools to run AI coding agents (Claude Code) safely and reliably. Most are zero-d
 | 固まった Claude Code から会話を救出する | [neko-rescue](https://github.com/aliksir/neko-rescue) |
 | npm 供給網攻撃を検知する | [npm-postinstall-attack-scanner](https://github.com/aliksir/npm-postinstall-attack-scanner) |
 | Next.js / React の脆弱性を検査する | [nextjs-security-scanner](https://github.com/aliksir/nextjs-security-scanner) |
+
+## PII 防御チェーン / PII Protection Chain
+
+顧客情報・機密データを扱う場合のツール連携。各層は独立して動き、組み合わせで多層防御になる。
+
+```
+                          ┌─────────────────────────┐
+                          │ Claude Code (Read/Grep)  │
+                          └────────┬────────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │  neko-not-yoshi              │
+                    │  顧客名・NGワードリスト管理   │
+                    │  push 前の漏洩検査にも使用   │
+                    └──────┬───────────┬──────────┘
+                           │           │
+              パターン辞書提供│           │ push 前検査
+                           │           │
+           ┌───────────────▼───┐   ┌───▼──────────────────┐
+           │  pii-mask-yoshi   │   │  git hook / CI       │
+           │  safe_read で     │   │  コミット前に         │
+           │  PII マスク       │   │  顧客名混入ブロック   │
+           │  (24 内蔵パターン) │   └──────────────────────┘
+           └───────┬───────────┘
+                   │ マスク済みテキスト
+                   │
+           ┌───────▼───────────┐
+           │  mcp-yoshi        │
+           │  MCP 通信フィルター │
+           │  API key 漏洩 /    │
+           │  インジェクション   │
+           │  検出              │
+           └───────────────────┘
+```
 
 ## その他のツール / More
 

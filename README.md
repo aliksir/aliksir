@@ -7,6 +7,7 @@ Tools to run AI coding agents (Claude Code) safely and reliably. Most are zero-d
 
 | やりたいこと | ツール |
 |------------|--------|
+| 猫軍団系ツールをまとめて管理したい | [neko-hq](https://github.com/aliksir/neko-hq) |
 | 顧客資料を安全に AI に読ませたい | [pii-mask-yoshi](https://github.com/aliksir/pii-mask-yoshi) |
 | PDF/Word/Excel を Markdown に変換したい | [markitdown-yoshi](https://github.com/aliksir/markitdown-yoshi) |
 | Claude Code をマルチエージェントで安全運用 | [neko-gundan](https://github.com/aliksir/neko-gundan) |
@@ -14,11 +15,15 @@ Tools to run AI coding agents (Claude Code) safely and reliably. Most are zero-d
 | MCP 通信を監視する | [mcp-yoshi](https://github.com/aliksir/mcp-yoshi) |
 | 公開前に顧客名・個人情報を検査する | [neko-not-yoshi](https://github.com/aliksir/neko-not-yoshi) |
 | Claude Code 環境を診断する | [neko-harness-doctor](https://github.com/aliksir/neko-harness-doctor) |
+| コード構造を検査したい | [neko-kensa](https://github.com/aliksir/neko-kensa) |
 | セッションの知識を次回に引き継ぐ | [context-distill](https://github.com/aliksir/context-distill) |
 | 会話ログを残す | [conversation-log](https://github.com/aliksir/conversation-log) |
 | 固まった Claude Code から会話を救出する | [neko-rescue](https://github.com/aliksir/neko-rescue) |
 | npm 供給網攻撃を検知する | [npm-postinstall-attack-scanner](https://github.com/aliksir/npm-postinstall-attack-scanner) |
+| 依存ライセンスを確認したい | [license-yoshi](https://github.com/aliksir/license-yoshi) |
 | Next.js / React の脆弱性を検査する | [nextjs-security-scanner](https://github.com/aliksir/nextjs-security-scanner) |
+| リリース作業を自動化したい | [release-yoshi](https://github.com/aliksir/release-yoshi) |
+| サービスの死活監視をしたい | [health-yoshi](https://github.com/aliksir/health-yoshi) |
 
 ## 推奨構成プリセット / Recommended Presets
 
@@ -29,7 +34,7 @@ Pick a preset that fits your use case.
 |--------|-------|----------|
 | **Minimal** | [neko-gundan](https://github.com/aliksir/neko-gundan) + [neko-not-yoshi](https://github.com/aliksir/neko-not-yoshi) | AI エージェントの品質ルール + 漏洩検査 |
 | **Secure** | Minimal + [mcp-yoshi](https://github.com/aliksir/mcp-yoshi) + [pii-mask-yoshi](https://github.com/aliksir/pii-mask-yoshi) | MCP 通信監視 + PII マスク付き多層防御 |
-| **Enterprise** | Secure + [neko-harness-doctor](https://github.com/aliksir/neko-harness-doctor) + [context-distill](https://github.com/aliksir/context-distill) + [skill-validator](https://github.com/aliksir/skill-validator) | 環境診断 + セッション引継 + スキル監査 |
+| **Enterprise** | Secure + [neko-hq](https://github.com/aliksir/neko-hq) + [neko-harness-doctor](https://github.com/aliksir/neko-harness-doctor) + [context-distill](https://github.com/aliksir/context-distill) + [skill-validator](https://github.com/aliksir/skill-validator) | エコシステム管理 + 環境診断 + セッション引継 + スキル監査 |
 | **Document AI** | [markitdown-yoshi](https://github.com/aliksir/markitdown-yoshi) + [pii-mask-yoshi](https://github.com/aliksir/pii-mask-yoshi) + [mcp-yoshi](https://github.com/aliksir/mcp-yoshi) | PDF/Office 変換 + PII 保護 |
 | **Recovery** | [yoshi](https://github.com/aliksir/yoshi) (rescue) + [conversation-log](https://github.com/aliksir/conversation-log) + [context-distill](https://github.com/aliksir/context-distill) | セッション救出 + ログ保存 + 知識引継 |
 

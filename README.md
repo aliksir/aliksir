@@ -36,7 +36,7 @@ Pick a preset that fits your use case.
 | **Secure** | Minimal + [mcp-yoshi](https://github.com/aliksir/mcp-yoshi) + [pii-mask-yoshi](https://github.com/aliksir/pii-mask-yoshi) | MCP 通信監視 + PII マスク付き多層防御 |
 | **Enterprise** | Secure + [neko-hq](https://github.com/aliksir/neko-hq) + [neko-harness-doctor](https://github.com/aliksir/neko-harness-doctor) + [context-distill](https://github.com/aliksir/context-distill) + [skill-validator](https://github.com/aliksir/skill-validator) | エコシステム管理 + 環境診断 + セッション引継 + スキル監査 |
 | **Document AI** | [markitdown-yoshi](https://github.com/aliksir/markitdown-yoshi) + [pii-mask-yoshi](https://github.com/aliksir/pii-mask-yoshi) + [mcp-yoshi](https://github.com/aliksir/mcp-yoshi) | PDF/Office 変換 + PII 保護 |
-| **Recovery** | [yoshi](https://github.com/aliksir/yoshi) (rescue) + [conversation-log](https://github.com/aliksir/conversation-log) + [context-distill](https://github.com/aliksir/context-distill) | セッション救出 + ログ保存 + 知識引継 |
+| **Recovery** | [neko-rescue](https://github.com/aliksir/neko-rescue) + [conversation-log](https://github.com/aliksir/conversation-log) + [context-distill](https://github.com/aliksir/context-distill) | セッション救出 + ログ保存 + 知識引継 |
 
 ## PII 防御チェーン / PII Protection Chain
 
